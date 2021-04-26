@@ -137,17 +137,17 @@
         <div class="card-header" id="heading4">
           <h2 class="mb-0">
             <button class="btn btn-link task" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-              Étape 4 - Plateformes inamovibles
+              Étape 4 - Plateformes immobiles
             </button>
           </h2>
         </div>
         <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
           <div class="card-body">
-            <p>Gros Problème! Le personnage emporte la plateforme!! Ce n'est certainement pas le but!</p>
+            <p>Gros Problème! Le personnage emporte la plateforme!! Ce n'est vraiment pas le but!</p>
 
-            <p>En fait, il nous faut rendre la plateforme STATIQUE. Dans ce cas là, le joueur ne saura plus l'emporter avec lui.</p>
+            <p>En fait, il faut que la plateforme soit STATIQUE. Le joueur ne pourra alors plus l'emporter avec lui.</p>
 
-            <p>Une façon de le rendre statique est simplement de dire qu'il ne peut pas bouger. En effet, ils sont synonymes. </p>
+            <p>Une façon de la rendre statique est simplement en disant qu'elle ne peut pas bouger.</p>
 
             <pre><code class="language-js">
               this.platform.setImmovable(true);
@@ -163,7 +163,7 @@
               this.platform2 = this.physics.add.sprite(XXX, YYY, "platform");
             </code></pre>
 
-            <p>Rend cette plateforme inmouvable également!</p>
+            <p>Rend cette plateforme immobile également!</p>
 
             <pre><code class="language-js">
               this.platform2.setImmovable(true);
@@ -175,7 +175,7 @@
               this.physics.add.collider(this.player, this.platform2);
             </code></pre>
 
-            <p>Voilà! Tu as ajouté une nouvelle plateform, <code>platform2</code>.</p>
+            <p>Voilà! Tu as ajouté une nouvelle plateforme, <code>platform2</code>.</p>
 
             <p><b>CHALLENGE:</b> Ajoute encore 2 ou 3 plateformes et assure toi que tu puisse sauter d'une plateforme à l'autre.</p>
           </div>
@@ -187,13 +187,13 @@
         <div class="card-header" id="heading5">
           <h2 class="mb-0">
             <button class="btn btn-link task" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-              Étape 5 - Groupes Statiques
+              Étape 5 - Groupes statiques
             </button>
           </h2>
         </div>
         <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
           <div class="card-body">
-            <p>Tu t'es surement rendu compte que c'est pénible d'ajouter les plateformes un à un! Et tu as entièrement raison! Pour résoudre cela, on va utiliser des <b>groupes</b>.</p>
+            <p>Tu t'es sûrement rendu compte que c'est pénible d'ajouter les plateformes une à une! Et tu as entièrement raison! Pour résoudre cela, on va utiliser des <b>groupes</b>.</p>
 
             <p>Commençons par créer un groupe.</p>
 
@@ -209,9 +209,9 @@
               this.platforms.create(XXX, YYY, "platform");
             </code></pre>
 
-            <p>Maintenant essaie de rendre tout le groupe imouvable et d'ajouter une collision avec le joueur!</p>
+            <p>Maintenant essaie de rendre tout le groupe immobile et d'ajouter une collision avec le joueur!</p>
 
-            <p>Ca marche pas! Surprise! En fait, on ne sait pas rendre un groupe imouvable. On sait par contre le rendre STATIQUE</p>
+            <p>Ça ne marche pas! Surprise! En fait, on ne sait pas rendre un groupe immobile. On sait par contre le rendre STATIQUE.</p>
 
             <p>Lorsque tu crées ton groupe, change la ligne en </p>
 
@@ -229,7 +229,7 @@
 
             <p>Tu peux le répeter autant de fois que tu le souhaites.</p>
 
-            <p><b>CHALLENGE: </b> Enlève les plateformes créées plus tôt en utilisant l'ancienne manière. Ajoute 10 plateformes sur ton écran et assure-toi que tu puisse sauter d'une plateforme à l'autre.</p>
+            <p><b>CHALLENGE: </b> Enlève les plateformes créées plus tôt en utilisant l'ancienne manière. Ajoute 10 plateformes sur ton écran et assure-toi que tu puisses sauter d'une plateforme à l'autre.</p>
           </div>
         </div>
       </div>
@@ -263,7 +263,7 @@
 
             <p>Voilà, tu ne peux plus voler!</p>
 
-            <p><b>Challenge final: </b> Fait commencer ton joueur à gauche du jeu. Ajoute des plateformes pour faire un jeu de parcours. Pour les plus déterminés, ajoutez un drapeau (Ou autre objet de victoire) à la fin du jeu! (Attention, la dernière partie est compliquée!)</p>
+            <p><b>Challenge final: </b> Fais commencer ton joueur à gauche du jeu. Ajoute des plateformes pour faire un jeu de parcours. Pour les plus déterminés, ajoutez un drapeau (ou autre objet de victoire) à la fin du jeu! (Attention, la dernière partie est compliquée!)</p>
           </div>
         </div>
       </div>
@@ -282,7 +282,7 @@
   <div class="footer-copyright">
     <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/3298561-faites-votre-mise-en-page-avec-flexbox#/id/r-3298711" rel="noopener noreferrer" target="_blank" class="alert-link copyright">
       <i class="far fa-copyright"></i>
-      2020 Techies Lab ASBL. All rights reserved.
+      2021 Techies Lab ASBL. All rights reserved.
     </a>
   </div>
 </div>
