@@ -45,7 +45,7 @@
         </div>
         <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
           <div class="card-body">
-            <p>Avant d'entamer ce défi, assure toi d'avoir déjà fait ceux ci:</p>
+            <p>Avant d'entamer ce défi, assure toi d'avoir déjà fait ceux-ci:</p>
             <ul>
               <li><a href="https://techieslab.github.io/PhaserJS-Introduction/">Phaser - Personnage</a></li>
             </ul>
@@ -66,14 +66,17 @@
         </div>
         <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
           <div class="card-body">
-            <p>Tu sais surement ce qu'est la gravité. C'est la force physique qui te retiens sur terre dans tes activités de tous les jours. C'est une force qui agit en permananc et qui te tire vers le bas toujours et toujours.</p>
+            <p>Tu sais sûrement ce qu'est la gravité. C'est la force physique qui te retient sur terre dans tes activités de tous les jours. C'est une force qui agit en permanence et qui te tire vers le bas toujours et toujours.</p>
 
             <p>Dans un jeu vidéo, pour qu'il soit un minimum réaliste, il faut donc aussi une gravité. Cette gravité devrait <b>toujours</b> agir, sauf quand on veut monter.</p>
 
-            <p>Il nous faut donc adapter notre code de plusieurs façons. D'abord, on doit changer ce que font les touches S et W/Z.</p>
+            <p>Il nous faut donc adapter notre code de plusieurs façons. D'abord, on doit changer ce que font les touches S et <span style="border: 5px solid Fuchsia;">W/Z</span> (W sur les claviers QWERTY et Z sur les claviers AZERTY)</p>
+
+            <img class="img-shadow mb-3" src="images/claviers-azerty-qwerty.png" alt="">
+
             <ul>
               <li>
-                <p>La touche S (Touche bas) devrait rien faire pour l'instant</p>
+                <p>La touche S (Touche bas) ne devrait rien faire pour l'instant.</p>
                 <p>La touche W/Z (Touche haut) devrait ajouter une plus grande vitesse (~500)</p>
               </li>
             </ul>
@@ -84,7 +87,7 @@
               this.player.body.setGravityY(800);
             </code></pre>
 
-            <p>Voici la commande pour <b>activer</b> la gravité. Dans quel fonction faut-il la placer? Dans <code>preload</code>, <code>create</code> ou <code>update</code>? Réflechis-bien!</p>
+            <p>Voici la commande pour <b>activer</b> la gravité. Dans quelle fonction faut-il la placer? Dans <code>preload</code>, <code>create</code> ou <code>update</code>? Réflechis-bien!</p>
 
             <p>Si tout se passe bien, tu sais voler maintenant en sautant!!</p>
           </div>
@@ -106,7 +109,7 @@
 
             <p>Tout d'abord, tu vas devoir dessiner ta plateforme. Retourne sur <a href="https://www.pixilart.com">pixilart.com</a> et dessine une jolie plateforme 40x40.</p>
 
-            <p>Après avoir dessiné et importé ton image, tu peux <b>load</b> cette image donc le système. Ceci est fait comme tu as <b>load</b> le joueur, en lui donnant un nom et en utilisant le nom de l'image.</p>
+            <p>Après avoir dessiné et importé ton image, tu peux <b>load</b> cette image dans le système. Ceci est fait comme tu as <b>load (téléchargé)</b> le joueur: en lui donnant un nom et en utilisant le nom de l'image.</p>
 
             <p>Après avoir <b>load</b> l'image, tu sais faire apparaître une plateforme sur l'écran comme tu as fait apparaître le joueur. Souviens-toi, tu as utilisé la commande</p>
 
@@ -114,7 +117,7 @@
               this.player = this.physics.add.sprite(400, 360, "player");
             </code></pre>
 
-            <p>Pour faire apparaître le joueur. Adapte la commande pour faire apparaître une plateforme!</p>
+            <p>pour faire apparaître le joueur. Adapte la commande pour faire apparaître une plateforme!</p>
 
             <p>Essaie d'adapter les coordonnées pour faire apparaître la plateforme sous ton Sprite. Est-ce que le personnage tombe à travers la plateforme?</p>
 
@@ -124,7 +127,7 @@
               this.physics.add.collider(this.player, this.platform);
             </code></pre>
 
-            <p>Ceci va ajouter une "collision" entre la palteforme et le joueur. Lance ton code, en faisant attention à avoir ton joueur au dessus de la plateforme, et observe!</p>
+            <p>Ceci va ajouter une "collision" entre la palteforme et le joueur. Lance ton code, en faisant attention à avoir ton joueur au-dessus de la plateforme, et observe!</p>
           </div>
         </div>
       </div>
@@ -151,7 +154,7 @@
             </code></pre>
 
             <p>Place ce code après avoir créé ta plateforme, mais avant d'ajouter la collision. Voilà, tu as crée la première partie de la plateforme!</p>
-          
+
             <p>Mais il n'y a qu'une plateforme pour l'instant... Rajoutons-en encore une non?</p>
 
             <p>Crée une nouvelle plateforme en utilisant</p>
@@ -264,8 +267,8 @@
           </div>
         </div>
       </div>
-      
-    </div> 
+
+    </div>
   </div>
 
 
